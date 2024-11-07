@@ -1,0 +1,159 @@
+body, h1, h2, h3, p {
+    margin: 20px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #007bff;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 0.5em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button, .toggle-theme {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover, .toggle-theme:hover {
+    background-color: #4CAF50;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border-radius: 50%;
+    margin-top: 1em;
+    border: 4px solid #ddd;
+    transition: border-color 0.3s;
+    width: 10em;
+    height: 10em;
+}
+
+body[data-theme="dark"] {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body[data-theme="dark"] .container {
+    background-color: #1f1f1f;
+}
+
+body[data-theme="dark"] h3 {
+    color: #f0f0f0;
+}
+
+body[data-theme="dark"] header, 
+body[data-theme="dark"] footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+body[data-theme="dark"] img {
+    border-color: #444;
+}
+
+.toggle-theme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.toggle-theme:hover {
+    background-color: #0056b3;
+}
+
